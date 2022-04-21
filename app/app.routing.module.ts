@@ -15,7 +15,7 @@ const routes : Routes = [
 },
   {path:'tab1', 
   component: Tab1Component,
-  canActivate: [MsalGuard],
+  canActivate: [AuthGuard],
 },
   {path:'tab2', 
   component: Tab2Component,
