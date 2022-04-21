@@ -6,8 +6,12 @@ import { Router } from '@angular/router';
 )
 
 export class AuthGuard implements CanActivate {
-  constructor(private route : Router){}
+  constructor(private routeR : Router){}
 canActivate(route: ActivatedRouteSnapshot,state: RouterStateSnapshot): boolean|Observable<boolean>|Promise<boolean> {
+//console.log(this.routeR);
+console.log(route);
+console.log(state);
+this.routeR.navigate(['tab2']);
 return false;
 }
 
