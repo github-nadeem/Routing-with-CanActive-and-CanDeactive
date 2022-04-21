@@ -17,7 +17,7 @@ const routes : Routes = [
   component: Tab1Component,
   canActivate: [AuthGuard],
 },
-  {path:'tab2', 
+  {path:'tab2/:id/:id1', 
   component: Tab2Component,
   canDeactivate: [Deact]
 },
@@ -26,7 +26,7 @@ const routes : Routes = [
 
 @NgModule({
   imports:[
-    CommonModule, RouterModule.forRoot(routes)
+     RouterModule.forRoot(routes)
   ],
   exports:[RouterModule]
 })
